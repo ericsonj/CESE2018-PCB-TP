@@ -27,4 +27,4 @@ El siguiente proyecto busca ser un adicional al trabajo final de la carrera de e
 
 ## Prototipo
 
-..imagen..
+![alt text](https://github.com/ericsonj/CESE2018-PCB-TP/blob/master/CircuitoProto.jpg)

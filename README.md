@@ -25,6 +25,19 @@ El siguiente proyecto busca ser un adicional al trabajo final de la carrera de e
 
 *  Manufactura del cicuito impreso.
 
+## Plan de trabajo
+
+1.  Diseño de plataforma que por medio de conectores integra en una misma placa cada modulo.
+2.  Primera versión del diseño de la PCB.
+3.  **Búsqueda de esquemático de modulo NODE MCU para extraer ESP-12 e integrarlo en el diseño del circuito.
+4.  **Segunda versión del diseño de la PCB.
+5.  **Búsqueda de esquemático de Fuente DC para integración en el circuito impreso.
+6.  **Tercera versión del diseño de la PCB.
+7.  **Búsqueda de esquemático de AUDIO CODEC WM8131 para integración en el circuito impreso.
+8.  **Cuarta versión del diseño de la PCB.
+
+**Posibles versiones del proyecto si alcanza el tiempo estimado. 
+
 ## Prototipo
 
 ![alt text](https://github.com/ericsonj/CESE2018-PCB-TP/blob/master/CircuitoProto.jpg)

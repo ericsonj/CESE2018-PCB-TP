@@ -31,12 +31,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:nodemcu_esp12
 LIBS:PCB_TP_Final-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -74,7 +75,7 @@ U 1 1 5BA57C65
 P 5250 2200
 F 0 "CN7" H 5300 2700 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 5300 1600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 5250 2200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 5250 2200 50  0001 C CNN
 F 3 "" H 5250 2200 50  0001 C CNN
 	1    5250 2200
 	1    0    0    -1  
@@ -262,4 +263,10 @@ Wire Wire Line
 	3750 2600 3750 1900
 Wire Wire Line
 	3750 1900 3850 1900
+$Sheet
+S 6700 1650 700  600 
+U 5BA67DD8
+F0 "NODEMCU_ESP12" 60
+F1 "NODEMCU_ESP12.sch" 60
+$EndSheet
 $EndSCHEMATC

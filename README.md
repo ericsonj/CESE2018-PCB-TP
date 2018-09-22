@@ -1,3 +1,12 @@
+# Progreso
+
+## Imagen 1
+![alt text](https://github.com/ericsonj/CESE2018-PCB-TP/blob/master/progreso_1.jpg)
+
+## Imagen 2
+![alt text](https://github.com/ericsonj/CESE2018-PCB-TP/blob/master/progreso_2.jpg)
+
+
 # CESE2018-PCB-TP
 CESE 2018 Diseño de Circuitos Impresos,
 

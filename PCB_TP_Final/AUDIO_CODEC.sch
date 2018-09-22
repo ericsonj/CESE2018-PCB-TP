@@ -31,12 +31,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:nodemcu_esp12
 LIBS:PCB_TP_Final-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -52,7 +53,7 @@ U 1 1 5BA58F64
 P 5800 3250
 F 0 "J1" H 5800 3750 50  0000 C CNN
 F 1 "Conn_01x09" H 5800 2750 50  0000 C CNN
-F 2 "CUSTOM_LIB:Audio_Codec_WM8731" H 5800 3250 50  0001 C CNN
+F 2 "AUDIO_CODEC_WM8731:Audio_Codec_WM8731" H 5800 3250 50  0001 C CNN
 F 3 "" H 5800 3250 50  0001 C CNN
 	1    5800 3250
 	1    0    0    -1  

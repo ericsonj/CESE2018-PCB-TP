@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /MYPROJECTS/PCB/CESE2018-PCB-TP/PCB_TP_Final/PCB_TP_Final.sch)
-    (date "Fri 21 Sep 2018 20:30:53 -05")
+    (date "Sat 22 Sep 2018 00:05:37 -05")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -52,6 +52,7 @@
       (tstamp 5BA57D8E))
     (comp (ref J1)
       (value Conn_01x09)
+      (footprint CUSTOM_LIB:Audio_Codec_WM8731)
       (libsource (lib conn) (part Conn_01x09))
       (sheetpath (names /AUDIO_CODEC/) (tstamps /5BA58F55/))
       (tstamp 5BA58F64)))

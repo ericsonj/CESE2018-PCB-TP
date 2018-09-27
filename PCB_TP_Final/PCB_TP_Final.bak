@@ -32,12 +32,13 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nodemcu_esp12
+LIBS:power_mb_v2
 LIBS:PCB_TP_Final-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -136,8 +137,6 @@ NoConn ~ 5050 4700
 NoConn ~ 5550 4700
 NoConn ~ 5550 4600
 NoConn ~ 5550 4500
-NoConn ~ 5550 4400
-NoConn ~ 5550 4300
 NoConn ~ 5550 4200
 NoConn ~ 5550 4100
 NoConn ~ 5550 4000
@@ -145,9 +144,7 @@ NoConn ~ 5550 3900
 NoConn ~ 5550 3800
 NoConn ~ 5550 3700
 NoConn ~ 5550 3600
-NoConn ~ 5550 3500
 NoConn ~ 5550 3400
-NoConn ~ 5550 3300
 NoConn ~ 5550 3200
 NoConn ~ 5550 3100
 NoConn ~ 2800 3300
@@ -174,7 +171,6 @@ NoConn ~ 3300 4200
 NoConn ~ 3300 4100
 NoConn ~ 3300 4000
 NoConn ~ 3300 3900
-NoConn ~ 3300 3800
 NoConn ~ 3300 3700
 NoConn ~ 3300 3600
 NoConn ~ 3300 3500
@@ -206,17 +202,6 @@ F8 "SCL" I R 4500 1700 60
 $EndSheet
 NoConn ~ 3350 2800
 NoConn ~ 3350 2900
-$Comp
-L +3.3V #PWR02
-U 1 1 5BA5A575
-P 2450 2500
-F 0 "#PWR02" H 2450 2350 50  0001 C CNN
-F 1 "+3.3V" H 2450 2640 50  0000 C CNN
-F 2 "" H 2450 2500 50  0001 C CNN
-F 3 "" H 2450 2500 50  0001 C CNN
-	1    2450 2500
-	1    0    0    -1  
-$EndComp
 NoConn ~ 3850 2000
 Wire Wire Line
 	2450 2700 2450 3050
@@ -244,9 +229,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 1700 3850 1700
 Wire Wire Line
-	2850 2600 2450 2600
+	2450 2600 2850 2600
 Wire Wire Line
-	2450 2600 2450 2500
+	2450 2000 2450 2600
 Wire Wire Line
 	5550 1800 5550 1700
 Wire Wire Line
@@ -264,9 +249,58 @@ Wire Wire Line
 Wire Wire Line
 	3750 1900 3850 1900
 $Sheet
-S 6700 1650 700  600 
+S 6600 3150 800  650 
 U 5BA67DD8
 F0 "NODEMCU_ESP12" 60
 F1 "NODEMCU_ESP12.sch" 60
+F2 "HSCLK" I L 6600 3500 60 
+F3 "HMISO" I L 6600 3400 60 
+F4 "HMOSI" I L 6600 3600 60 
+F5 "HCS" I L 6600 3300 60 
 $EndSheet
+$Sheet
+S 6600 1700 800  650 
+U 5BA7CCA2
+F0 "POWER_MB_V2" 60
+F1 "POWER_MB_V2.sch" 60
+$EndSheet
+Text GLabel 2300 2000 0    60   Input ~ 0
+3.3VB
+Wire Wire Line
+	2450 2000 2300 2000
+Wire Wire Line
+	5550 4300 6350 4300
+Wire Wire Line
+	6350 4300 6350 3500
+Wire Wire Line
+	6350 3500 6600 3500
+Wire Wire Line
+	5550 4400 6400 4400
+Wire Wire Line
+	6400 4400 6400 3600
+Wire Wire Line
+	6400 3600 6600 3600
+Wire Wire Line
+	5550 3500 6300 3500
+Wire Wire Line
+	6300 3500 6300 3400
+Wire Wire Line
+	6300 3400 6600 3400
+Wire Wire Line
+	5550 3300 6600 3300
+$Comp
+L GND #PWR?
+U 1 1 5BAC5062
+P 3600 3900
+F 0 "#PWR?" H 3600 3650 50  0001 C CNN
+F 1 "GND" H 3600 3750 50  0000 C CNN
+F 2 "" H 3600 3900 50  0001 C CNN
+F 3 "" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3800 3600 3800
+Wire Wire Line
+	3600 3800 3600 3900
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sat 22 Sep 2018 12:37:35 -05
+update=Sun 23 Sep 2018 12:24:01 -05
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=nodemcu_esp12
+LibName34=power_mb_v2

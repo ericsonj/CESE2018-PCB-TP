@@ -1,4 +1,4 @@
-update=Sun 23 Sep 2018 12:24:01 -05
+update=Sat 06 Oct 2018 01:15:26 -05
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,4 @@ LibName31=contrib
 LibName32=valves
 LibName33=nodemcu_esp12
 LibName34=power_mb_v2
+LibName35=/opt/kicad_library/library/library/Mechanical

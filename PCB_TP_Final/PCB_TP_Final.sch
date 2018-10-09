@@ -33,6 +33,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:nodemcu_esp12
 LIBS:power_mb_v2
+LIBS:Mechanical
 LIBS:PCB_TP_Final-cache
 EELAYER 25 0
 EELAYER END
@@ -289,10 +290,10 @@ Wire Wire Line
 Wire Wire Line
 	5550 3300 6600 3300
 $Comp
-L GND #PWR?
+L GND #PWR02
 U 1 1 5BAC5062
 P 3600 3900
-F 0 "#PWR?" H 3600 3650 50  0001 C CNN
+F 0 "#PWR02" H 3600 3650 50  0001 C CNN
 F 1 "GND" H 3600 3750 50  0000 C CNN
 F 2 "" H 3600 3900 50  0001 C CNN
 F 3 "" H 3600 3900 50  0001 C CNN
@@ -303,4 +304,26 @@ Wire Wire Line
 	3300 3800 3600 3800
 Wire Wire Line
 	3600 3800 3600 3900
+$Comp
+L Mounting_Hole MK1
+U 1 1 5BB85397
+P 3450 5400
+F 0 "MK1" H 3450 5600 50  0000 C CNN
+F 1 "Mounting_Hole" H 3450 5525 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.7mm" H 3450 5400 50  0001 C CNN
+F 3 "" H 3450 5400 50  0001 C CNN
+	1    3450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK2
+U 1 1 5BB8559D
+P 3450 5900
+F 0 "MK2" H 3450 6100 50  0000 C CNN
+F 1 "Mounting_Hole" H 3450 6025 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.7mm" H 3450 5900 50  0001 C CNN
+F 3 "" H 3450 5900 50  0001 C CNN
+	1    3450 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

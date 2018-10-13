@@ -39,10 +39,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "SHIELD VoIP para NUCLEO F767"
 Date "2018-09-26"
-Rev "1.0"
+Rev "2.0"
 Comp "Ericson Joseph Estupiñan "
 Comment1 ""
 Comment2 ""
@@ -163,7 +163,6 @@ NoConn ~ 2800 4400
 NoConn ~ 2800 4500
 NoConn ~ 2800 4600
 NoConn ~ 2800 4700
-NoConn ~ 3300 4700
 NoConn ~ 3300 4600
 NoConn ~ 3300 4500
 NoConn ~ 3300 4400
@@ -193,13 +192,13 @@ S 3850 1500 650  600
 U 5BA58F55
 F0 "AUDIO_CODEC" 60
 F1 "AUDIO_CODEC.sch" 60
-F2 "SCK" I L 3850 1600 60 
-F3 "MISO" I L 3850 1700 60 
-F4 "MOSI" I L 3850 1800 60 
-F5 "ADCL" I L 3850 1900 60 
-F6 "DACL" I L 3850 2000 60 
-F7 "SDA" I R 4500 1600 60 
-F8 "SCL" I R 4500 1700 60 
+F2 "SCK" O L 3850 1600 60 
+F3 "SDA" B R 4500 1600 60 
+F4 "MISO" I L 3850 1700 60 
+F5 "ADCL" O L 3850 1900 60 
+F6 "DACL" O L 3850 2000 60 
+F7 "MOSI" O L 3850 1800 60 
+F8 "SCL" O R 4500 1700 60 
 $EndSheet
 NoConn ~ 3350 2800
 NoConn ~ 3350 2900
@@ -324,6 +323,67 @@ F 1 "Mounting_Hole" H 3450 6025 50  0000 C CNN
 F 2 "Mounting_Holes:MountingHole_3.7mm" H 3450 5900 50  0001 C CNN
 F 3 "" H 3450 5900 50  0001 C CNN
 	1    3450 5900
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1250 4050 750  700 
+U 5BBD73D1
+F0 "TalkButton" 60
+F1 "talkbutton.sch" 60
+F2 "talk" O R 2000 4600 60 
+$EndSheet
+Wire Wire Line
+	3300 4700 3600 4700
+Wire Wire Line
+	3600 4700 3600 4850
+Wire Wire Line
+	3600 4850 2300 4850
+Wire Wire Line
+	2300 4850 2300 4600
+Wire Wire Line
+	2300 4600 2000 4600
+$Comp
+L Mounting_Hole F1
+U 1 1 5BC13BBA
+P 4500 5400
+F 0 "F1" H 4500 5600 50  0000 C CNN
+F 1 "Fiducial" H 4500 5525 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 4500 5400 50  0001 C CNN
+F 3 "" H 4500 5400 50  0001 C CNN
+	1    4500 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole F3
+U 1 1 5BC13CC4
+P 4500 5900
+F 0 "F3" H 4500 6100 50  0000 C CNN
+F 1 "Fiducial" H 4500 6025 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 4500 5900 50  0001 C CNN
+F 3 "" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole F2
+U 1 1 5BC13DBE
+P 5200 5400
+F 0 "F2" H 5200 5600 50  0000 C CNN
+F 1 "Fiducial" H 5200 5525 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperBottom" H 5200 5400 50  0001 C CNN
+F 3 "" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole F4
+U 1 1 5BC13E5D
+P 5200 5900
+F 0 "F4" H 5200 6100 50  0000 C CNN
+F 1 "Fiducial" H 5200 6025 50  0000 C CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 5200 5900 50  0001 C CNN
+F 3 "" H 5200 5900 50  0001 C CNN
+	1    5200 5900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

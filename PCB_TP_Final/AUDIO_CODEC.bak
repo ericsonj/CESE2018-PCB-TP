@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date "2018-09-26"
 Rev ""
@@ -60,21 +60,21 @@ F 3 "" H 5800 3250 50  0001 C CNN
 	1    5800 3250
 	1    0    0    -1  
 $EndComp
-Text HLabel 5150 2850 0    60   Input ~ 0
+Text HLabel 5150 2850 0    60   Output ~ 0
 SCK
 Wire Wire Line
 	5600 2850 5150 2850
 Text HLabel 5150 2950 0    60   Input ~ 0
 MISO
-Text HLabel 4050 3050 0    60   Input ~ 0
+Text HLabel 4050 3050 0    60   Output ~ 0
 MOSI
-Text HLabel 5150 3150 0    60   Input ~ 0
+Text HLabel 5150 3150 0    60   Output ~ 0
 ADCL
-Text HLabel 5150 3250 0    60   Input ~ 0
+Text HLabel 5150 3250 0    60   Output ~ 0
 DACL
-Text HLabel 5150 3350 0    60   Input ~ 0
+Text HLabel 5150 3350 0    60   BiDi ~ 0
 SDA
-Text HLabel 5150 3450 0    60   Input ~ 0
+Text HLabel 5150 3450 0    60   Output ~ 0
 SCL
 Wire Wire Line
 	5600 2950 5150 2950
@@ -111,7 +111,7 @@ U 1 1 5BA9EB39
 P 4550 3300
 F 0 "R1" V 4630 3300 50  0000 C CNN
 F 1 "3.3K" V 4550 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4480 3300 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4480 3300 50  0001 C CNN
 F 3 "" H 4550 3300 50  0001 C CNN
 	1    4550 3300
 	1    0    0    -1  

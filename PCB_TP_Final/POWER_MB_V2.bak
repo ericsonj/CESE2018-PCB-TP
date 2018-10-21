@@ -40,10 +40,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
-Title ""
+Title "Power MB v2"
 Date "2018-09-26"
-Rev ""
-Comp ""
+Rev "1.0"
+Comp "Ericson Joseph Estupiñan Pineda"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -66,10 +66,10 @@ NoConn ~ 6150 3150
 NoConn ~ 5700 4300
 NoConn ~ 6150 4300
 $Comp
-L GND #PWR06
+L GND #PWR09
 U 1 1 5BA7CDDB
 P 5550 4550
-F 0 "#PWR06" H 5550 4300 50  0001 C CNN
+F 0 "#PWR09" H 5550 4300 50  0001 C CNN
 F 1 "GND" H 5550 4400 50  0000 C CNN
 F 2 "" H 5550 4550 50  0001 C CNN
 F 3 "" H 5550 4550 50  0001 C CNN
@@ -77,10 +77,10 @@ F 3 "" H 5550 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR07
+L +3V3 #PWR010
 U 1 1 5BA9BDEF
 P 5550 3000
-F 0 "#PWR07" H 5550 2850 50  0001 C CNN
+F 0 "#PWR010" H 5550 2850 50  0001 C CNN
 F 1 "+3V3" H 5550 3140 50  0000 C CNN
 F 2 "" H 5550 3000 50  0001 C CNN
 F 3 "" H 5550 3000 50  0001 C CNN
@@ -92,4 +92,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 4300 5550 4550
 NoConn ~ 6000 4300
+Text Notes 4600 2750 0    60   ~ 0
+Pagina para modulo de alimentación\n*Rev 1.0: Componente de entrada de alimentación.\nRev 2.0: Esquemático de modulo de alimentación. (Trabajo a futuro)
 $EndSCHEMATC

@@ -1,9 +1,8 @@
-# r1.0
+# Rev 1.0
 
 Primera entrega para revision.
 
 ![alt text](https://github.com/ericsonj/CESE2018-PCB-TP/blob/master/img_r1.0.jpg)
-
 
 # Progreso
 

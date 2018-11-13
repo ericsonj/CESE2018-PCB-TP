@@ -95,8 +95,6 @@ F 3 "" H 5950 4550 50  0001 C CNN
 	1    5950 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 4300 5950 4550
 $Comp
 L +3V3 #PWR08
 U 1 1 5BA9BFC5
@@ -108,24 +106,45 @@ F 3 "" H 5850 2600 50  0001 C CNN
 	1    5850 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 2800 5850 2600
 Text HLabel 6900 3750 2    60   Input ~ 0
 HSCLK
 Text HLabel 6900 3850 2    60   Input ~ 0
 HMISO
-Text HLabel 6900 3950 2    60   Input ~ 0
+Text HLabel 7470 3950 2    60   Input ~ 0
 HMOSI
 Text HLabel 6900 4050 2    60   Input ~ 0
 HCS
+Text Notes 4050 2300 0    60   ~ 0
+Pagina para el modulo MODEMCU ESP12.\n*Rev 1.0: Componente que representa el modulo.\nRev 2.0: Esquemático necesario para usar el modulo ESP12E. (trabajo futuro)
+$Comp
+L R R5
+U 1 1 5BEA4DE2
+P 7310 4280
+F 0 "R5" V 7390 4280 50  0000 C CNN
+F 1 "10K" V 7310 4280 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 7240 4280 50  0001 C CNN
+F 3 "" H 7310 4280 50  0001 C CNN
+	1    7310 4280
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 4490
 Wire Wire Line
-	6700 3750 6900 3750
+	7310 4490 5950 4490
+Wire Wire Line
+	7310 4440 7310 4490
+Connection ~ 7310 3950
+Wire Wire Line
+	7310 4130 7310 3950
+Wire Wire Line
+	6700 3950 7470 3950
+Wire Wire Line
+	6700 4050 6900 4050
 Wire Wire Line
 	6700 3850 6900 3850
 Wire Wire Line
-	6700 3950 6900 3950
+	6700 3750 6900 3750
 Wire Wire Line
-	6700 4050 6900 4050
-Text Notes 4050 2300 0    60   ~ 0
-Pagina para el modulo MODEMCU ESP12.\n*Rev 1.0: Componente que representa el modulo.\nRev 2.0: Esquemático necesario para usar el modulo ESP12E. (trabajo futuro)
+	5850 2800 5850 2600
+Wire Wire Line
+	5950 4300 5950 4550
 $EndSCHEMATC
